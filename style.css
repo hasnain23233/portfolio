@@ -1,0 +1,299 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 500ms ease;
+}
+section{
+    width: 90%;
+    padding: 12px;
+    margin: auto;
+}
+section nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+}
+section nav ul li{
+    list-style: none;
+}
+section nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 6px;
+    transition: background 300ms ease-in-out;
+}
+section nav ul li a:hover{
+    background-color: black;
+    color: white;
+}
+/* ............main div css here................. */
+main #mainDiv{
+    display: flex;
+    background-color: rgba(231, 242, 246, 0.741);
+    height: 500px;
+}
+main #mainDiv #mainImage img{
+    height: 500px;
+    width: 350px;
+}
+main #mainDiv #mainText{
+    margin: 120px;
+}
+main #mainDiv #mainText h1{
+    font-size: 45px;
+}
+main #mainDiv #mainText h1 span{
+    padding: 12px;
+    border-bottom: 2px solid black;
+}
+main #mainDiv #mainText #Skill{
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+main #mainDiv #mainText #btn{
+    padding: 20px;
+    border: 2px solid transparent;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+main #mainDiv #mainText #btn:hover{
+    background-color: transparent;
+    color: darkred;
+    border: 2px solid black;
+
+}
+main #mainDiv #mainText #Skill::before{
+    content: "WEB DEVELOPER";
+    color: darkred;
+    animation: words 20s infinite;
+}
+main #mainDiv #mainText #Skill::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: rgba(231, 242, 246);
+    border-left: 2px solid black;
+    right: -8px;
+    animation: cousor .8s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cousor{
+    to{
+        border-left: 2px solid transparent;
+    }
+}
+/* .......about us css here................ */
+#mainTextAbout{
+    width: 100%;
+    display: none;
+    margin: 40px;
+}
+#mainTextAbout h1{
+    font-size: 35px;
+}
+#mainTextAbout #mainTextAboutFlex{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#mainTextAbout #mainTextAboutFlex #mainTextAboutme{
+    width: 300px;
+}
+#mainTextAbout #mainTextAboutFlex #mainTextAboutme p{
+    line-height: 0.7cm;
+}
+/* ............mySkills css here............. */
+#mainTextMyPortfolio{
+    display: none;
+    margin: 30px;
+    width: 100%;
+}
+#mainTextMyPortfolio h1{
+    font-size: 34px;
+}
+#mainTextMyPortfolio #skillFlex{
+    width: 100%;
+    display: flex;
+    margin: 50px 0px;
+    justify-content: space-between;
+    font-size: 19px;
+    font-style: italic;
+}
+/* .............................porfolio css here........... */
+#potfolioPage{
+    display: none;
+    margin: 40px;
+    width: 100%;
+}
+#potfolioPage h1{
+    font-size: 35px;
+}
+#potfolioPage #linkflex{
+    text-align: start;
+    width: 95%;
+}
+#potfolioPage #linkflex ul{
+    display: flex; 
+    list-style: none;
+}
+#potfolioPage #linkflex ul li{
+    border: 1px solid black;
+    text-align: center;
+    width: 210px;
+    margin-left: 4px;
+    border-radius: 12px;
+    height: 70px;
+    padding: 12px;
+}
+#potfolioPage #linkflex ul li a img{
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+#potfolioPage #linkflex ul li a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+/* socail css here */
+
+#potfolioPage #linkflex #ulul{
+    display: flex; 
+    list-style: none;
+}
+#potfolioPage #linkflex #ulul li{
+    border: 1px solid black;
+    text-align: center;
+    width: 210px;
+    margin-left: 4px;
+    border-radius: 12px;
+    height: 150px;
+    padding: 12px;
+}
+#potfolioPage #linkflex #ulul li a img{
+    width: 100px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 2px;
+    border: 1px solid black;
+}
+#potfolioPage #linkflex #ulul li a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+/* ..........................contact css here.................. */
+#contactMe{
+    display: none;
+    margin: 40px;
+    width: 100%;
+}
+#contactMe h1{
+    font-size: 35px;
+}
+#contactMe form{
+    padding: 12px;
+    width: 50%;
+}
+#contactMe #contactFlex{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contactMe #contactFlex img{
+    width: 230px;
+    border-radius: 100%;
+}
+#contactMe form input , textarea{
+    border: 1px solid gray;
+    height: 40px;
+    padding: 3px;
+    width: 100%;
+    border-radius: 6px;
+}
+#contactMe form textarea{
+    height: 100px;
+}
+#contactMe form button{
+    padding: 12px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#contactMe form button:hover{
+    background-color: transparent;
+    color: darkred;
+    border: 2px solid black;
+}
+@keyframes words{
+    0%,20%{
+        content: "FONTEND DEVELOPER";
+    }
+    21%,40%{
+        content: "YOUTUBER";
+    }
+    41%,60%{
+        content: "WEB DESINER";
+    }
+    61%,80%{
+        content: "WEB DEVELOPER";
+    }
+    81%,100%{
+        content: "GAMER";
+    }
+}
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0px;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+/* responsive css here */
+@media only screen and (min-width: 600px){
+    section nav{
+        display: flex;
+        flex-direction: column;
+    }
+    /* ......mainresponsive here.......... */
+    main #mainDiv{
+        display: flex;
+        background-color: rgba(231, 242, 246, 0.741);
+        height: 500px;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 1000px){
+    section nav{
+        display: flex;
+        flex-direction: row;
+    }
+    section nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    /* ......mainresponsive here.......... */
+    main #mainDiv{
+        display: flex;
+        background-color: rgba(231, 242, 246, 0.741);
+        height: 500px;
+        flex-direction: row;
+    }
+}
